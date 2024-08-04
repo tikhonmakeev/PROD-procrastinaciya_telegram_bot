@@ -1,0 +1,15 @@
+Werkzeug~=3.0.1
+WTForms~=3.0.1
+SQLAlchemy~=2.0.16
+Flask~=2.2.5
+pip~=24.0
+wheel~=0.42.0
+lxml~=5.0.0
+setuptools~=69.0.2
+Cython~=3.0.7
+future~=0.18.3
+alembic~=1.9.4
+flask-login
+flask-migrate
+flask-wtf
+email-validator
