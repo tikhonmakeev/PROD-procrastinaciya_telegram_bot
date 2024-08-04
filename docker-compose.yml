@@ -1,0 +1,14 @@
+services:
+  test-server:
+    build:
+      context: tests
+    stop_signal: SIGINT
+    hostname: test-server
+    ports:
+      - '8080:8080'
+
+  bot:
+    build:
+      context: .
+    command: /bin/sh -c "sleep 2 && python main.py"
+    stop_signal: SIGINT
