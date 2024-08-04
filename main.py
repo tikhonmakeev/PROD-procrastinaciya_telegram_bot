@@ -10,8 +10,8 @@ from aiogram.enums import ParseMode
 from aiogram.types import FSInputFile
 from aiohttp import ClientSession
 
-server_url = "HERE_IS_SERVER_URL"
-TOKEN = "HERE IS BOTKEY"  # release bot key
+server_url = f"http://test-server:{int(os.getenv("SERVER_PORT"))}" # here put docker server url
+TOKEN = "BOT_TOKEN"  # release bot key
 bot = Bot(TOKEN)
 bot_id = "telegram"
 
@@ -94,7 +94,6 @@ async def bot_tasks():
 
 async def get_updates(data, session: ClientSession):
     for data in data["data"]:
-        # if data["action"] == "send_message":
         successful = True
         message = "OK"
         real_message = None
